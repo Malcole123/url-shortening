@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+<!---Font Awesome icons-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+</head>
+<body>
+  <section class = "header">
+    <nav>
+      <img id="headerLogo"src="images/logo.svg" alt="Shortly logo">
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a class="mobile" id = "loginBtn" href="#">Login</a></li>
+          <li><a class="mobile" id = "signupBtn" href="#">Sign Up</a></li>
+        </ul> 
+      </div>
+      <div class="user-btns">
+        <a class="desktop" id = "loginBtn" href="#">Login</a>
+        <a class="desktop" id="signupBtn" href="#">Sign Up</a>
+      </div>
+      <i id = "menuToggle" class="fas fa-bars"></i>
+    </nav>
+    <div class="header-intro">
+      <div class="header-text">
+        <h1>More than just<br>shorter links</h1>
+        <p>Put your brand's recognition and get detailed<br>
+          insights on how your links are performing</p>
+        <a id= "getStartedBtn" href="#">Get Started</a>    
+        </div>
+        <div class="header-image"></div>
+      </div>
+    </div>
+    <div class="search">
+    <div class="search-area">
+      <input type = "text" name='urlInput' id="urlEnter" placeholder="Shorten your URL here...">
+      <button id = "submit">Shorten it !</button>
+    </div>
+ 
+    </div>
+  </section>
+  
+  <section class = "stats-info">
+    <div class="search-results"><!--Conditional visibility-->
+      <!---Results go here-->
+    </div>
+    <h2>Advanced Statistics</h2>
+    <p>Track how your links are performing across the web with our advanced statistics dashboard</p>
+    <div class="stats-cards">
+      <div class="card-one">
+        <img src="images/icon-brand-recognition.svg" alt="brand recognition">
+        <h3>Brand Recognition</h3>
+        <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content</p>
+      </div>
+      <div class="card-two">
+        <img src="images/icon-detailed-records.svg" alt="detailed records">
+        <h3>Detailed Records</h3>
+        <p>Gain insights into who is clicking your links. Knowing when and where 
+          people engage with your content helps inform better decisions.</p>
+      </div>
+      <div class="card-three">
+        <img src="images/icon-fully-customizable.svg" alt="Fullly customizable">
+        <h3>Fully Customizable</h3>
+        <p>Improve brand awareness and content discoverability through customizable 
+          links, supercharging audience engagement.</p>
+      </div>
+    </div>
+  </section>
+  <section class = "boost">
+    <h2>Boost your links today</h2>
+    <a href="#">Get Started</a>
+  </section>
+  <section class = "footer">
+    <div class="footer-body">
+      <img src="images/logowhite.svg" alt="logo">
+      <div class="foot-nav">
+      <table>
+        <thead>
+          <th>Features</th>
+          <th>Resources</th>
+          <th>Company</th>
+        </thead>
+        <tr>
+          <td>Link Shortening</td>
+          <td>Blog</td>
+          <td>About</td>
+        </tr>
+        <tr>
+          <td>Branded Links</td>
+          <td>Developers</td>
+          <td>Our Team</td>
+        </tr>
+        <tr>
+          <td>Analytics</td>
+          <td>Support</td>
+          <td>Careers</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Contact</td>
+        </tr>
+      </table>
+      </div>
+      <div class="social-links">
+        <i class = "fab fa-facebook"></i>
+        <i class = "fab fa-twitter"></i>
+        <i class = "fab fa-pinterest"></i>
+        <i class = "fab fa-instagram"></i>
+  
+      </div>
+    </div>
+   
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Malik Coleman</a>.
+  </div>
+
+  <script src = "index.js"></script>
+</body>
+</html>
